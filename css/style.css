@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+:root {
+    --transition: .3s;
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(225, 100%, 94%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/pattern-background-desktop.svg) repeat-x;
+    background-size: contain;
+    background-position: 0% -29%;
+    background-color: hsl(225, 100%, 94%);
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    color: var(--Dark-blue);
+    font-size: 28px;
+}
+
+button {
+    all: unset;
+    height: 46px;
+    background-color: #382ae1;
+    border-radius: 10px;
+    color: var(--Pale-blue);
+    font-weight: 700;
+    box-shadow: #907df0bd 0px 7px 29px 0px;
+    transition: var(--transition);
+}
+
+button:hover {
+    background-color: #766cf1;
+    cursor: pointer;
+}
+
+.card {
+    width: 420px;
+    min-width: 370px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    margin-inline: 40px;
+}
+
+.container {
+    padding: 40px;
+    padding-top: 34px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    margin-bottom: 20px;
+}
+
+.content h1 {
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.box {
+    margin-bottom: 30px;
+    background-color: #f8f9fe;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.music {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.music .icon-music {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+
+.music .text h1 {
+    margin-bottom: 5px;
+    font-weight: 900;
+    font-size: 16px;
+    color: var(--Dark-blue);
+}
+
+.music .text h3 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.box span>a {
+    color: #382ae1;
+    font-weight: 700;
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+.box span>a:hover {
+    color: #766cf1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container>a {
+    font-size: 16px;
+    margin-top: 27px;
+    color: hsla(223, 47%, 23%, 0.603);
+    font-weight: 900;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.container a:hover {
+    color: var(--Dark-blue);
+}
+
+@media (max-width:400px) {
+    .container {
+        padding: 35px 25px;
+    }
+
+    .card {
+        min-width: 345px;
+    }
+
+    .content h1 {
+        font-weight: 900;
+        margin-bottom: 17px;
+        font-size: 24px;
+    }
+
+    .content p {
+        width: 264px;
+        margin: 0 auto;
+    }
+}
